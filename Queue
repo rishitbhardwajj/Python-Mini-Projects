@@ -1,0 +1,21 @@
+from collections import deque
+
+q = deque()
+
+# Enqueue
+q.append(10)
+q.append(20)
+q.append(30)
+
+print("Queue:", q)
+
+# Dequeue
+print("Removed:", q.popleft())
+
+# Front element
+print("Front:", q[0])
+
+# Check if empty
+print("Is Empty:", len(q) == 0)
+
+print("Queue:", q)
