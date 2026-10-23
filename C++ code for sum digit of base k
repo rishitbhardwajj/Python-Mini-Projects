@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    int n = 11, k = 2;
+    string ans = "";
+
+    while (n > 0) {
+        ans += to_string(n % k);
+        n /= k;
+    }
+
+    reverse(ans.begin(), ans.end());
+    cout << ans;
+
+    return 0;
+}
